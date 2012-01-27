@@ -47,8 +47,7 @@ One more good thing is that *you don’t have to care about filetypes*, e.g. EXC
 
 For simple text files we suggest to use the .ibx extension. For instance, a task called 'Do laundry' would be saved in '~/INBOX/Do laundry.ibx'.
 
-2. Improvements
----------------
+## 2. Improvements
 
 ### 2.1 Contexts
 
@@ -58,8 +57,7 @@ While specifying your task, you already might know the context in which it needs
 
 If it needs to get more specific you can use a more sophisticated folder structure. For instance, if you want to put a task for washing your dishes you might use the following folder structure '~/INBOX/@home/@kitchen/wash the dishes.ibx'.
 
-'3\.' Scripts
--------------
+## 3. Scripts
 
 For being as productive as possible and getting the thought as quickly as possible out of you brain, we suggest using a small script, which basically pops up a window with a textfield, if you want to save a thought, and stores the file/ToDo automatically in the right context, i.e. folder on your filesystem. Connecting the executing of the script with a global shortcut makes you being very quick!
 

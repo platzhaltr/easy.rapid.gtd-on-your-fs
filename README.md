@@ -30,7 +30,7 @@ You'll find here:
 
 3.2 Usage
 
-'1. Basic Idea'
+1. Basic Idea
 ---------------
 
 Easy. The *basic idea is to create a folder* in your filesystem (e.g. /home/user/Inbox) in which you want to store your ToDo’s, thoughts, etc. We’ll call this folder *the INBOX-folder* as it is the *repository of all the things* your want to keep track of.
@@ -58,8 +58,8 @@ While specifying your task, you already might know the context in which it needs
 
 If it needs to get more specific you can use a more sophisticated folder structure. For instance, if you want to put a task for washing your dishes you might use the following folder structure '~/INBOX/@home/@kitchen/wash the dishes.ibx'.
 
-3. Scripts
-----------
+{3. Scripts}
+------------
 
 For being as productive as possible and getting the thought as quickly as possible out of you brain, we suggest using a small script, which basically pops up a window with a textfield, if you want to save a thought, and stores the file/ToDo automatically in the right context, i.e. folder on your filesystem. Connecting the executing of the script with a global shortcut makes you being very quick!
 

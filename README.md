@@ -8,7 +8,7 @@ It tries to accomplish the idea of *being as simple as possible*, *as quick as p
 
 Meanwhile, there are a lot of GTD applications out there and some of them are really good and intuitive in managing ToDo lists, but this idea is different and some kind of wired in the first place. Please feel free to comment and to contact us about what you think about it.
 
-For beeing really as productive as possible please jump into section **3. Scripts**.
+For beeing really as productive as possible please jump into section **3. Scripts** and have a look at section **2.3 Synchronisation**.
 
 You'll find here:
 
@@ -18,10 +18,10 @@ You'll find here:
 2. **Improvements**
 	1. Context
 	2. Folder Structure
+	3. Synchronisation
 3. **Scripts**
 	1. Requirements and Installation
 	2. Usage
-4. **Synchronisation**
 
 ## 1. Basic Idea
 

@@ -83,11 +83,11 @@ If you use a synchronisation program like DropBox (see section **2.3 Synchronisa
 
 ## Known Problems
 
-`Traceback (most recent call last):
-  File "scripts/brainflush.py", line 33, in enter_callback
-    path = self.properties.get("Repository","path")
-  File "/usr/lib/python2.7/ConfigParser.py", line 556, in get
-    raise NoSectionError(section)`
+`Traceback (most recent call last):`
+`  File "scripts/brainflush.py", line 33, in enter_callback`
+`    path = self.properties.get("Repository","path")`
+`  File "/usr/lib/python2.7/ConfigParser.py", line 556, in get`
+`    raise NoSectionError(section)`
     
 This may have the following reasons:
 

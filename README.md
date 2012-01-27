@@ -22,6 +22,7 @@ You'll find here:
 3. **Scripts**
 	1. Requirements and Installation
 	2. Usage
+4. **Known Problems**
 
 ## 1. Basic Idea
 
@@ -78,5 +79,19 @@ Hit ALT+N and the window will pop up. You might type a short description of your
 If you don't specify a context the file will be created right in the INBOX-folder.
 
 If you use a synchronisation program like DropBox (see section **2.3 Synchronisation**), it is preferable to set the path in app.properties pointing to your dropbox-directory which is simultaneously your INBOX-directory. In this case, every task or Todo created with our script will be saved in the INBOX-/DropBox-directory, which automatically will synchronize all your devices, like your computer at home, at work and your mobile phone.
+
+
+## Known Problems
+
+`Traceback (most recent call last):
+  File "scripts/brainflush.py", line 33, in enter_callback
+    path = self.properties.get("Repository","path")
+  File "/usr/lib/python2.7/ConfigParser.py", line 556, in get
+    raise NoSectionError(section)`
+    
+This may have the following reasons:
+
+* The property file 'app.properties' could not be found. Obviously it is not in the same directory where you are executing the python script from. SOLUTION: You might edit the code to set an absolute path to the property file.
+* The section 'Resository' in the property file could not be found. The file is corrupt, please check out again.
 
 

@@ -13,25 +13,16 @@ For beeing really as productive as possible please jump into section *3. Scripts
 You'll find here:
 
 1. **Basic Idea**
-
-1.1 Workflow
-
-1.2 Your File-Browser
-
+	1. Workflow
+	2. Your File-Browser
 2. **Improvements**
-
-2.1 Context
-
-2.2 Folder Structure
-
+	1. Context
+	2. Folder Structure
 3. **Scripts**
+	1. Requirements and Installation
+	2. Usage
 
-3.1 Requirements and Installation
-
-3.2 Usage
-
-1. Basic Idea
----------------
+## 1. Basic Idea
 
 Easy. The *basic idea is to create a folder* in your filesystem (e.g. /home/user/Inbox) in which you want to store your ToDo’s, thoughts, etc. We’ll call this folder *the INBOX-folder* as it is the *repository of all the things* your want to keep track of.
 

@@ -16,6 +16,8 @@ import re
 import os
 import ConfigParser
 
+app_properties = "app.properties"
+
 class BrainFlushWindow:
 
 	tagExpr = re.compile( "@[\w,\s]+" )	# matches the tags, might be more than one
@@ -32,7 +34,10 @@ class BrainFlushWindow:
 		try:
 			path = self.properties.get("Repository","path")
 		except ConfigParser.NoOptionError:
-			self.on_error(widget, "Error loading path from app.properties.")
+			self.on_error(widget, "Error loading key 'path' from app.properties.")
+			return
+		except ConfigParser.NoSectionError:
+			self.on_error(widget, "Error loading file app.properties. Please check if app.properties is accessable from where you are executing the script.")
 			return
 
 		if path.endswith("/"):
@@ -40,6 +45,10 @@ class BrainFlushWindow:
 
 		# the text the user typed in
 		text = textfield.get_text()
+
+		# check if empty
+		if not text:
+			return
 
 		# initialization
 		tags = ""
@@ -69,7 +78,7 @@ class BrainFlushWindow:
 	def __init__(self):
 		# the property file
 		self.properties = ConfigParser.ConfigParser()
-		self.properties.read("app.properties")
+		self.properties.read(app_properties)
 
 		# create the window
 		self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)

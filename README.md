@@ -8,7 +8,7 @@ It tries to accomplish the idea of *being as simple as possible*, *as quick as p
 
 Meanwhile, there are a lot of GTD applications out there and some of them are really good and intuitive in managing ToDo lists, but this idea is different and some kind of wired in the first place. Please feel free to comment and to contact us about what you think about it.
 
-For beeing really as productive as possible please jump into section *3. Scripts*.
+For beeing really as productive as possible please jump into section **3. Scripts**.
 
 You'll find here:
 
@@ -21,6 +21,7 @@ You'll find here:
 3. **Scripts**
 	1. Requirements and Installation
 	2. Usage
+4. **Synchronisation**
 
 ## 1. Basic Idea
 
@@ -48,6 +49,10 @@ While specifying your task, you already might know the context in which it needs
 
 If it needs to get more specific you can use a more sophisticated folder structure. For instance, if you want to put a task for washing your dishes you might use the following folder structure '~/INBOX/@home/@kitchen/wash the dishes.ibx'.
 
+### 2.3 Synchronisation 
+
+We use [DropBox](http://dropbox.com/ "DropBox") to have our folders synchronised, but you might use any other program too. For more information see section **3.2 Usage** and the website.
+
 ## 3. Scripts
 
 For being as productive as possible and getting the thought as quickly as possible out of you brain, we suggest using a small script, which basically pops up a window with a textfield, if you want to save a thought, and stores the file/ToDo automatically in the right context, i.e. folder on your filesystem. Connecting the execution of the script with a global shortcut makes you being very quick!
@@ -68,7 +73,10 @@ Just checkout the project somewhere in your home-directory. You will find the sc
 
 ### 3.2 Usage
 
-Hit ALT+N and the window will pop up. You might type a short description of your task, entailed with some contexts. For instance, 'Do laundry today @home @bath'. This will create the following file and folder structure (if it does not yet exist): '~/INBOX/@home/@bath/Do laundry.ibx' (please see the app.properties file for the correct configuration of your path to the INBOX-directory).
+Hit ALT+N and the window will pop up. You might type a short description of your task, entailed with some contexts. For instance, 'do laundry today @home @bath'. This will create the following file and folder structure (if it does not yet exist): '~/INBOX/@home/@bath/do laundry.ibx' (please see the app.properties file for the correct configuration of your path to the INBOX-directory).
 
 If you don't specify a context the file will be created right in the INBOX-folder.
+
+If you use a synchronisation program like DropBox (see section **2.3 Synchronisation**), it is preferable to set the path in app.properties pointing to your dropbox-directory which is simultaneously your INBOX-directory. In this case, every task or Todo created with our script will be saved in the INBOX-/DropBox-directory, which automatically will synchronize all your devices, like your computer at home, at work and your mobile phone.
+
 

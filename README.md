@@ -50,7 +50,7 @@ If it needs to get more specific you can use a more sophisticated folder structu
 
 ## 3. Scripts
 
-For being as productive as possible and getting the thought as quickly as possible out of you brain, we suggest using a small script, which basically pops up a window with a textfield, if you want to save a thought, and stores the file/ToDo automatically in the right context, i.e. folder on your filesystem. Connecting the executing of the script with a global shortcut makes you being very quick!
+For being as productive as possible and getting the thought as quickly as possible out of you brain, we suggest using a small script, which basically pops up a window with a textfield, if you want to save a thought, and stores the file/ToDo automatically in the right context, i.e. folder on your filesystem. Connecting the execution of the script with a global shortcut makes you being very quick!
 
 ### 3.1 Requirements and Installation
 
@@ -65,4 +65,10 @@ Just checkout the project somewhere in your home-directory. You will find the sc
 * chmod 744 scripts/brainflush.py
 * execute the script by typing './brainflush.py'
 * put a global shortcut for that, e.g. ALT+N
+
+### 3.2 Usage
+
+Hit ALT+N and the window will pop up. You might type a short description of your task, entailed with some contexts. For instance, 'Do laundry today @home @bath'. This will create the following file and folder structure (if it does not yet exist): '~/INBOX/@home/@bath/Do laundry.ibx' (please see the app.properties file for the correct configuration of your path to the INBOX-directory).
+
+If you don't specify a context the file will be created right in the INBOX-folder.
 

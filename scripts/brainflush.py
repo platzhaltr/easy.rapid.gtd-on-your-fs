@@ -88,7 +88,19 @@ class BrainFlushWindow:
 		self.window.set_border_width(10)
 		self.window.set_size_request(450,50)
 		self.window.set_position(gtk.WIN_POS_CENTER)
-		self.window.set_title("Type in your task description")
+		
+		window_title = "Task Description"
+
+		try:
+			window_title = self.properties.get("General", "window.title.text")
+		except ConfigParser.NoOptionError:
+                        # no problem here, just logging
+			print "No key 'window.title.text' found in app.properties. Using default window title."
+                except ConfigParser.NoSectionError:
+			# no problem here, just logging
+			print "No Section 'General' found in app.properties. Using default window title."
+
+		self.window.set_title(window_title)
 
 		# the textfield
 		textfield = gtk.Entry(0)
